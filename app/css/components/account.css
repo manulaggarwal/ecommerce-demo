@@ -1,0 +1,23 @@
+.account-col {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.account-save-btn {
+  margin-right: 20px;
+}
+
+.account-home-link {
+  color: black;
+  font-size: xx-large;
+  position: absolute;
+  left: 5%;
+}
+
+.account-primary-address {
+  margin-bottom: 20px;
+}
+
+.account-name-header {
+  font-size: xx-large;
+}

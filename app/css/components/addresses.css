@@ -1,0 +1,22 @@
+.addresses-margin-padding {
+    margin-bottom: 10px;
+}
+
+.addresses-bold {
+    font-weight: bold;
+}
+
+.addresses-link {
+    cursor: pointer;
+}
+
+.addresses-link:hover {
+    text-decoration: underline !important;
+}
+
+.address-home-link{
+    color: black;
+    font-size: xx-large;
+    position: absolute;
+    left: 5%;
+  }

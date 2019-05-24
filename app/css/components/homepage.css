@@ -1,0 +1,31 @@
+.mt-1 {
+    margin-top: 0.5rem !important;
+    margin-bottom: 1.5rem;
+  }
+
+.backToTopAlign {
+    align-self: center;
+}
+
+.center-navbar {
+  width:30%;
+  margin-left: 35%;
+}
+
+.nav {
+  align-items: center
+}
+
+.homepage-overflow {
+  overflow-x: hidden;
+}
+
+.homepage-card-img-top {
+  max-height: 200px;
+  min-height: 150px;
+  object-fit: cover;
+}
+
+.card-all {
+ border: transparent;
+}

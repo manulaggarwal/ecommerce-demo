@@ -1,0 +1,81 @@
+.header-logo {
+    width: 40%;
+}
+
+.header-cart-logo {
+    height: 100%;
+    width: 16%;
+    float: right;
+}
+
+.header-cart-div {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 25px;
+}
+
+.header-main-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+.header-main-div>nav {
+    margin-bottom: 0px !important;
+}
+
+.header-element {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.header-cart-counter {
+    position: absolute;
+    color: white;
+    margin: -3px;
+}
+
+.header-link {
+    cursor: pointer;
+}
+
+.header-link:hover {
+    text-decoration: underline !important;
+}
+
+.header-category-dropdown-btn {
+    border: 1px solid black;
+}
+
+.header-category-dropdown-btn>button {
+    background-color: black;
+    border-color: black;
+    color: white;
+    border-radius: 0px;
+}
+
+.header-category-dropdown-btn>button:hover {
+    color: white;
+    background-color: lightseagreen;
+    border-radius: 0px;
+    border-color: lightseagreen;
+}
+
+.header-category-dropdown-btn>button:focus {
+    box-shadow: none !important;
+}
+
+.header-category-dropdown-btn>button:active {
+    border-color: lightseagreen !important;
+    background-color: lightseagreen !important;
+}
+
+.header-category-dropdown-btn>div {
+    border-radius: 0px;
+    border: 1px solid black;
+    min-width: 1100px;
+}

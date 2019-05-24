@@ -1,0 +1,445 @@
+{
+	"info": {
+		"_postman_id": "448730aa-f547-49f0-aa7f-c71639794019",
+		"name": "AlphaKART",
+		"description": "Shop Better!",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SignUp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "nikhil@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678a",
+							"type": "text"
+						},
+						{
+							"key": "firstName",
+							"value": "Nikhil",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Mohite",
+							"type": "text"
+						},
+						{
+							"key": "phoneNumber",
+							"value": "9876543210",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/users?email=nikhil@gmail.com&password=12345678a&firstName=Nikhil&lastName=Mohite&phoneNumber=9876543210",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "nikhil@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "12345678a"
+						},
+						{
+							"key": "firstName",
+							"value": "Nikhil"
+						},
+						{
+							"key": "lastName",
+							"value": "Mohite"
+						},
+						{
+							"key": "phoneNumber",
+							"value": "9876543210"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/sessions?email=nikhil@gmail.com&password=12345678a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sessions"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "nikhil@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "12345678a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/category/5ccf79f1d80e5628c721d361",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"category",
+						"5ccf79f1d80e5628c721d361"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCategoriesNames",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addAddress",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": " Nikhil Mohite 1",
+							"type": "text"
+						},
+						{
+							"key": "phoneNumber",
+							"value": " 9876543210",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": " 1C,209",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": " MG Road",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": " Mannheim",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": " Baden W",
+							"type": "text"
+						},
+						{
+							"key": "zip",
+							"value": " 67543",
+							"type": "text"
+						},
+						{
+							"key": "default",
+							"value": "false",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/addAddress",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"addAddress"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editAddress",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "_id",
+							"value": "5cd31996c14b9446fcd93011",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": " Nikhil Mohite 12",
+							"type": "text"
+						},
+						{
+							"key": "phoneNumber",
+							"value": " 9876543210",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": " 1C,208",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": " MG Road",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": " Mannheim",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": " Baden W",
+							"type": "text"
+						},
+						{
+							"key": "zip",
+							"value": " 67543",
+							"type": "text"
+						},
+						{
+							"key": "default",
+							"value": "false",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/editAddress?name= Nikhil Mohite&phoneNumber= 9876543210&address1= 1C,203&address2= MG Road&city= Mannheim&state= Baden W&zip= 67543&default=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"editAddress"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": " Nikhil Mohite"
+						},
+						{
+							"key": "phoneNumber",
+							"value": " 9876543210"
+						},
+						{
+							"key": "address1",
+							"value": " 1C,203"
+						},
+						{
+							"key": "address2",
+							"value": " MG Road"
+						},
+						{
+							"key": "city",
+							"value": " Mannheim"
+						},
+						{
+							"key": "state",
+							"value": " Baden W"
+						},
+						{
+							"key": "zip",
+							"value": " 67543"
+						},
+						{
+							"key": "default",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAddress",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "_id",
+							"value": "5cd31846c14b9446fcd93010",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/deleteAddress?name= Nikhil Mohite&phoneNumber= 9876543210&address1= 1C,207&address2= MG Road&city= Mannheim&state= Baden W&zip= 67543&default=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"deleteAddress"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": " Nikhil Mohite"
+						},
+						{
+							"key": "phoneNumber",
+							"value": " 9876543210"
+						},
+						{
+							"key": "address1",
+							"value": " 1C,207"
+						},
+						{
+							"key": "address2",
+							"value": " MG Road"
+						},
+						{
+							"key": "city",
+							"value": " Mannheim"
+						},
+						{
+							"key": "state",
+							"value": " Baden W"
+						},
+						{
+							"key": "zip",
+							"value": " 67543"
+						},
+						{
+							"key": "default",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/sessions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sessions"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

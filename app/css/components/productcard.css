@@ -1,0 +1,28 @@
+.wx { 
+    width: 70rem;
+ }
+
+ .px {
+    padding-left: 11px;
+ }
+
+ .img-top {
+   width: 30%;
+ }
+
+ .txt {
+    align-content: center;
+ }
+
+ .priceCol {
+   text-align: right;
+   padding-right: 100px;
+ }
+
+ .flex {
+   flex-basis: 0;
+ }
+
+
+
+ 

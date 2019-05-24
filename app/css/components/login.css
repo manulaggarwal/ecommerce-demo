@@ -1,0 +1,13 @@
+.login-register-link{
+  text-align: right;
+  font-size: small;
+}
+
+.register-link{
+  cursor: pointer;
+}
+
+.register-link:hover {
+  text-decoration: underline !important;
+}
+

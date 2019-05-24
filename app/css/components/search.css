@@ -1,0 +1,36 @@
+@import '../common/form.css';
+
+
+.search-icon-button-pos {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    border-radius: 0px;
+    background-color: white;
+    border: 1px solid black;
+    border-left: none;
+}
+
+.search-icon-button-pos:hover {
+    font-size: larger;
+}
+
+.search-input-style {
+    border-radius: 0px;
+    border: 1px solid black;
+
+}
+
+.search-input-style:focus {
+    border-color: black;
+    box-shadow: none;
+}
+
+.form-custom-control {
+   @apply --form-custom-style;
+}
+
+.form-custom-control:focus {
+    @apply --form-custom-style-focus;
+ }

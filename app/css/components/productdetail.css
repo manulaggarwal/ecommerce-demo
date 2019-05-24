@@ -1,0 +1,17 @@
+.center {
+    display: block;
+    margin-left: auto;
+    width: 25%;
+  }
+
+.product-main-div {
+  margin-top: 35px;
+}
+
+.product-details-spacing {
+  margin-bottom: 50px;
+}
+
+.product-detail-value {
+  float: right;
+}

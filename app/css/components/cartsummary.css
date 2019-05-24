@@ -1,0 +1,12 @@
+.btn-right {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.cart-trash {
+    font-size: x-large;
+}
+
+.cart-trash:hover {
+    color: red;
+}

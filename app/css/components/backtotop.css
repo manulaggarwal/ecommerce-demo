@@ -1,0 +1,31 @@
+.backToTop-size-align {
+    width: 4%;
+    height: 3%;
+    float: right;
+    padding-right: 15px;
+}
+
+.backToTop-scroll {
+    opacity: 0.3;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 5px;
+    border: none;
+    
+    &:hover {
+      opacity: 1;
+    }  
+}
+
+.backToTop-arrow-up {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -9px;
+    margin-left: -5px;
+  }
